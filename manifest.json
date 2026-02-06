@@ -1,0 +1,9 @@
+
+{
+  "name": "ご飯候補セレクター",
+  "short_name": "ご飯セレクター",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#4f46e5"
+}
