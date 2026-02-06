@@ -19,16 +19,22 @@ const data = {
   ]
 };
 
+const categoryLabel = {
+  pasta: "パスタ",
+  meat: "肉",
+  ramen: "ラーメン"
+};
+
 function showList(category) {
   const cards = document.getElementById("cards");
   cards.innerHTML = "";
 
   data[category].forEach(item => {
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = `card ${category}`; // ← ここがポイント
 
     card.innerHTML = `
-      <span class="badge">${category}</span>
+      <span class="badge">${categoryLabel[category]}</span>
       <h3>${item.name}</h3>
       <p>🕒 ${item.time}</p>
       <a href="${item.url}" target="_blank">お店を見る →</a>
@@ -37,3 +43,4 @@ function showList(category) {
     cards.appendChild(card);
   });
 }
+
