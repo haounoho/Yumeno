@@ -28,6 +28,7 @@ function showList(category) {
     card.className = "card";
 
     card.innerHTML = `
+      <span class="badge">${category}</span>
       <h3>${item.name}</h3>
       <p>🕒 ${item.time}</p>
       <a href="${item.url}" target="_blank">お店を見る →</a>
