@@ -87,3 +87,28 @@ button:active {
   color: #4f46e5;
   margin-bottom: 8px;
 }
+
+/* ===== カテゴリ別カラー ===== */
+
+/* パスタ */
+.card.pasta .badge {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+/* 肉 */
+.card.meat .badge {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ラーメン */
+.card.ramen .badge {
+  background: #ecfeff;
+  color: #0891b2;
+}
+
+/* リンク色もカテゴリ連動させたい場合 */
+.card.pasta a { color: #ea580c; }
+.card.meat a  { color: #dc2626; }
+.card.ramen a { color: #0891b2; }
