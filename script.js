@@ -36,7 +36,3 @@ function showList(category) {
     cards.appendChild(card);
   });
 }
-
-function toggleDark() {
-  document.body.classList.toggle("dark");
-}
