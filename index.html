@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ご飯候補セレクター</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
   <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" href="./icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
   <header>
-    <h1>ゆめちゃんは<br>何が食べたいのかな？</h1>
+    <h1>ゆめちゃんは<br>何を食べたいのかな？</h1>
   </header>
 
   <main>
@@ -18,10 +23,14 @@
       <button onclick="showList('meat')">🥩 肉</button>
       <button onclick="showList('ramen')">🍜 ラーメン</button>
     </div>
-
     <div id="cards" class="cards"></div>
   </main>
 
   <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
