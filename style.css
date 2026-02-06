@@ -76,3 +76,57 @@ button:active {
   text-decoration: none;
   font-weight: 600;
 }
+
+/* ===== ダークモード（OS設定に追従） ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #e5e5e5;
+  }
+
+  header {
+    background: #1f1f1f;
+    color: #ffffff;
+  }
+
+  button {
+    background: #1e1e1e;
+    color: #c7c7ff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  }
+
+  .card {
+    background: #1e1e1e;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+  }
+
+  .card p {
+    color: #b5b5b5;
+  }
+
+  .card a {
+    color: #9fa8ff;
+  }
+}
+
+body.dark {
+  background: #121212;
+  color: #e5e5e5;
+}
+
+body.dark header {
+  background: #1f1f1f;
+}
+
+body.dark button {
+  background: #1e1e1e;
+  color: #c7c7ff;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+
+body.dark .card p {
+  color: #b5b5b5;
+}
